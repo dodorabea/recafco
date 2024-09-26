@@ -1732,6 +1732,9 @@ footer .footer__center .social-media a img {
   width: 1.15rem;
   transition: all 1s ease-out;
 }
+footer .footer__center .social-media a img.youtube {
+  width: 1.4rem;
+}
 footer .footer__center .social-media a:hover {
   transform: scale(1.1);
 }
@@ -1776,6 +1779,15 @@ footer .footer__bottom .content {
 }
 footer .footer__bottom p {
   color: rgb(79, 78, 81);
+}
+footer .footer__bottom p a {
+  color: rgb(79, 78, 81);
+}
+footer .footer__bottom p a:hover {
+  color: rgb(234, 38, 42);
+}
+footer .footer__bottom p:hover {
+  color: rgb(234, 38, 42);
 }
 @media (max-width: 769px) {
   footer .footer__bottom p {

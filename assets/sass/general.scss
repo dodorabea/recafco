@@ -875,6 +875,9 @@ footer {
                     -webkit-transition: all 1s ease-out;
                     transition: all 1s ease-out;
                 }
+                img.youtube{
+                    width: 1.4rem;
+                }
 
                 &:hover {
                     -webkit-transform: scale(1.1);
@@ -933,8 +936,16 @@ footer {
         }
 
         p {
+            a{
+                color: map_get($theme-colors, black-group8);
+                &:hover{
+                    color: map_get($theme-colors, danger);
+                }
+            }
             color: map_get($theme-colors, black-group8);
-
+            &:hover{
+                color: map_get($theme-colors, danger);
+            }
             @media (max-width: 769px) {
                 text-align: center;
             }
