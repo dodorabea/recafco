@@ -1203,7 +1203,7 @@ html[dir=ltr] .home-main-slider .content-slider {
   left: 0;
 }
 .home-main-slider .content-slider .button {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #fff;
   text-transform: capitalize;
   font-family: "avenir-medium", sans-serif;
@@ -1305,9 +1305,19 @@ html[dir=ltr] .second-section .sperator::after {
   font-family: "avenir-bold", sans-serif;
   text-transform: capitalize;
 }
+@media (max-width: 569px) {
+  .second-section h5 {
+    font-size: 1rem;
+  }
+}
 .second-section p {
   font-size: 0.98rem;
   color: #767577;
+}
+@media (max-width: 569px) {
+  .second-section p {
+    font-size: 0.798rem;
+  }
 }
 
 /*===details-section===*/
@@ -1511,12 +1521,24 @@ html[dir=ltr] .logo-with-description .swiper-slide:not(:last-child)::after {
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: var(--swiper-navigation-sides-offset, 60px);
+  right: var(--swiper-navigation-sides-offset, 10px);
+}
+@media (min-width: 769px) {
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 60px);
+  }
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: var(--swiper-navigation-sides-offset, 60px);
+  left: var(--swiper-navigation-sides-offset, 10px);
+}
+@media (min-width: 769px) {
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 60px);
+  }
 }
 
 .clients img,
@@ -1613,7 +1635,7 @@ html[dir=ltr] .logo-with-description .swiper-slide:not(:last-child)::after {
   height: 100px;
 }
 .interactive-section .interactive-section-swiper .swiper-slide img {
-  width: 50px;
+  width: 65px;
 }
 @media (min-width: 769px) {
   .interactive-section .interactive-section-swiper .swiper-slide img {

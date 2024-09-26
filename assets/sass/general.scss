@@ -284,7 +284,7 @@ h6 {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 74%, rgba(0, 0, 0, 0.7) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 );
         .button{
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             color: #fff;
             text-transform: capitalize;
             font-family: $font-family-medium;
@@ -384,7 +384,6 @@ h6 {
 .second-section {
     background: map_get($theme-colors, white-group8);
     padding: 2rem 0;
-
     .sperator {
         &::after {
             @include position(absolute, 0, 0, 0, 0);
@@ -393,10 +392,8 @@ h6 {
             height: 50px;
             width: 2.5px;
             margin: auto;
-
         }
     }
-
     .counter {
         .counting {
             font-size: 2rem;
@@ -418,11 +415,17 @@ h6 {
         color: map_get($theme-colors, dark);
         font-family: $font-family-bold;
         text-transform: capitalize;
+        @media (max-width: 569px){
+            font-size: 1rem;
+        }
     }
 
     p {
         font-size: 0.98rem;
         color: map_get($theme-colors, grey);
+        @media (max-width: 569px){
+            font-size: 0.798rem;
+        }
     }
 }
 
@@ -494,7 +497,6 @@ h6 {
             flex-direction: column-reverse;
         }
     }
-
 }
 
 /*===bulding-section===*/
@@ -645,12 +647,18 @@ h6 {
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-    right: var(--swiper-navigation-sides-offset, 60px);
+    right: var(--swiper-navigation-sides-offset, 10px);
+    @media (min-width: 769px){
+        right: var(--swiper-navigation-sides-offset, 60px);
+    }
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 60px);
+    left: var(--swiper-navigation-sides-offset, 10px);
+    @media (min-width: 769px){
+        left: var(--swiper-navigation-sides-offset, 60px);
+    }
 }
 
 .clients,
@@ -750,7 +758,7 @@ h6 {
             height: 100px;
 
             img {
-                width: 50px;
+                width: 65px;
 
                 @media (min-width: 769px) {
                     width: 60px;
