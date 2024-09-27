@@ -41,42 +41,70 @@
         <img id="centre-logo" src="assets/images/logo/color-recafco-logo.svg" alt="logo" />
     </div>
     <!--Header-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+    <header data-lenis-prevent>
+        <nav class="navbar navbar-expand-lg menu-sticky">
+            <div class="container-fluid">
+              <a class="navbar-brand desktop-only" href="index.html">
+                <img src="assets/images/logo/white-logo.svg" alt="Logo"/>
+              </a>
+              <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/images/icon/menubtton.svg" alt="icon"/>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!----------------------------------------------------------------->
+                <div class="header-nav-mobile-only">
+                    <img src="assets/images/logo/color-recafco-logo.svg" alt="Logo"/>
+                    <a href="#" class="language-btn">العربية</a>
+                </div>
+                <!----------------------------------------------------------------->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">about</a>
+                    <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon"/>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="production.html">Production</a>
+                    <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon"/>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="construction.html">Construction</a>
+                    <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon"/>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="all-projects.html">Projects</a>
+                    <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon"/>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="help.html">contacts</a>
+                    <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon"/>
+                  </li>
+                  <li class="icon-mobile">
+                    <div class="input-group d-flex align-items-center justify-content-between">
+                        <input type="text" class="form-control" placeholder="Scientific Center" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button class="btn" type="button">
+                            <img src="assets/images/icon/search.svg" alt="icon"/>
+                          </button>
+                        </div>
+                    </div>
+                  </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+                <div class="navbar-other-option d-flex align-items-center gap-3">
+                    <a href="#">العربية</a>
+                    <a href="#">
+                        <img src="assets/images/icon/nav-instagram.svg" alt="icon"/>
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/icon/nav-linkedin.svg" alt="icon"/>
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/icon/search.svg" alt="icon"/>
+                    </a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
     <!--main-slider-->
     <section class="home-main-slider position-relative">
         <!-- Swiper -->
@@ -574,10 +602,10 @@
     <!--main-swiper-->
     <script>
         var swiperMain = new Swiper(".mySwiper.main-swiper", {
-            autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-            },
+            // autoplay: {
+            // delay: 4000,
+            // disableOnInteraction: false,
+            // },
             speed: 4000,
             effect: 'fade',
             fadeEffect: {
