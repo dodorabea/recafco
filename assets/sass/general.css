@@ -2550,8 +2550,8 @@ html[dir=ltr] .build-together .build-together-absolute-box {
 }
 @media (max-width: 769px) {
   .build-together .build-together-absolute-box {
-    flex: 0 0 85.333333%;
-    max-width: 85.333333%;
+    flex: 0 0 90.333333%;
+    max-width: 90.333333%;
     top: unset !important;
     bottom: 70px;
     position: relative;
@@ -2562,8 +2562,8 @@ html[dir=ltr] .build-together .build-together-absolute-box {
 }
 @media (max-width: 400px) {
   .build-together .build-together-absolute-box {
-    flex: 0 0 95.333333%;
-    max-width: 95.333333%;
+    flex: 0 0 90.333333%;
+    max-width: 90.333333%;
   }
 }
 .build-together .build-together-absolute-box span {
@@ -2690,17 +2690,10 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
     box-shadow: 10px 10px 35px -5px rgba(0, 0, 0, 0.15);
     padding: 7rem 1rem;
     margin: auto;
-    flex: 0 0 85.333333%;
-    max-width: 85.333333%;
+    flex: 0 0 90.333333%;
+    max-width: 90.333333%;
     top: unset !important;
     width: 100%;
-  }
-}
-@media (max-width: 400px) {
-  .mobile-upper-text {
-    flex: 0 0 95.333333%;
-    max-width: 95.333333%;
-    padding: 4rem 1rem;
   }
 }
 .mobile-upper-text h4 {
