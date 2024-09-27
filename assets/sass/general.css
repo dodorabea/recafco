@@ -1313,7 +1313,8 @@ html[dir=ltr] #preloader-background {
   display: none;
 }
 
-.header-nav-mobile-only, .icon-mobile {
+.header-nav-mobile-only,
+.icon-mobile {
   display: none;
 }
 
@@ -1391,7 +1392,8 @@ html[dir=ltr] #preloader-background {
     margin-top: 1rem;
     padding: 1rem;
   }
-  header .input-group .btn, header .input-group input {
+  header .input-group .btn,
+  header .input-group input {
     background: transparent !important;
     outline: 0;
     border: 0;
@@ -1399,7 +1401,8 @@ html[dir=ltr] #preloader-background {
     padding: 0;
     box-shadow: unset !important;
   }
-  header .input-group .btn img, header .input-group input img {
+  header .input-group .btn img,
+  header .input-group input img {
     width: 16px;
     filter: brightness(0) saturate(100%) invert(34%) sepia(83%) saturate(5983%) hue-rotate(344deg) brightness(90%) contrast(105%);
   }
