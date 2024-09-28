@@ -1281,8 +1281,10 @@ img.search {
 /*===Footer===*/
 footer {
     background: #FBFAFA;
-    padding: 90px 0 1.94rem 0;
-
+    padding: 50px 0 1.94rem 0;
+    @media (min-width: 991.98px){
+        padding: 90px 0 1.94rem 0;
+    }
     &.white-bg {
         background: #fff;
     }
@@ -2007,8 +2009,10 @@ footer {
 
 /*====================*/
 .build-together {
-    padding: 5rem 0;
-
+    padding: 5rem 0 2rem 0;
+    @media (min-width: 991.98px){
+        padding: 5rem 0;
+    }
     .flex-reverse {
         @media (max-width: 769px) {
             display: flex;
@@ -2228,11 +2232,15 @@ footer {
             }
 
             h3 {
-                font-size: 2.5rem;
-                line-height: 3rem;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
                 text-transform: uppercase;
                 color: map_get($theme-colors, black);
                 font-family: $font-family-bold;
+                @media (min-width: 991.98px){
+                    font-size: 2.5rem;
+                line-height: 3rem;
+                }
             }
 
             .location {
@@ -2480,8 +2488,10 @@ footer {
 }
 
 .help-section {
-    padding: 4rem 0 8rem 0;
-
+    padding: 4rem 0 4rem 0;
+    @media (min-width: 991.98px){
+        padding: 4rem 0 8rem 0;
+    }
     .title-part {
         font-size: 1.75rem;
         color: #393939;

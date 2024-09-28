@@ -2051,7 +2051,12 @@ html[dir=ltr] .logo-with-description .swiper-slide:not(:last-child)::after {
 /*===Footer===*/
 footer {
   background: #FBFAFA;
-  padding: 90px 0 1.94rem 0;
+  padding: 50px 0 1.94rem 0;
+}
+@media (min-width: 991.98px) {
+  footer {
+    padding: 90px 0 1.94rem 0;
+  }
 }
 footer.white-bg {
   background: #fff;
@@ -2725,7 +2730,12 @@ html[dir=ltr] .quality-assurance .body-description-part.absolute-position.revers
 
 /*====================*/
 .build-together {
-  padding: 5rem 0;
+  padding: 5rem 0 2rem 0;
+}
+@media (min-width: 991.98px) {
+  .build-together {
+    padding: 5rem 0;
+  }
 }
 @media (max-width: 769px) {
   .build-together .flex-reverse {
@@ -2954,11 +2964,17 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
   font-family: "avenir-bold", sans-serif;
 }
 .projects-section .projects-div .content h3 {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   text-transform: uppercase;
   color: #393939;
   font-family: "avenir-bold", sans-serif;
+}
+@media (min-width: 991.98px) {
+  .projects-section .projects-div .content h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
 }
 .projects-section .projects-div .content .location {
   color: #EA262A;
@@ -3176,7 +3192,12 @@ html[dir=ltr] .filters-taps-section .filter-result-box .content-overlay {
 }
 
 .help-section {
-  padding: 4rem 0 8rem 0;
+  padding: 4rem 0 4rem 0;
+}
+@media (min-width: 991.98px) {
+  .help-section {
+    padding: 4rem 0 8rem 0;
+  }
 }
 .help-section .title-part {
   font-size: 1.75rem;
