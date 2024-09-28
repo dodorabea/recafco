@@ -1929,6 +1929,17 @@ html[dir=ltr] .logo-with-description .swiper-slide:not(:last-child)::after {
   right: 0;
   left: unset;
 }
+.logo-with-description.mobile-only .swiper-slide:not(:last-child)::after {
+  content: unset;
+}
+.logo-with-description.mobile-only h2 {
+  color: #393939;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "avenir-bold", sans-serif;
+}
 .logo-with-description .item img {
   height: 60px;
   margin-bottom: 1rem !important;
@@ -3529,14 +3540,12 @@ html[dir=ltr] .hero-section .text-box::after {
 }
 .mobile-only {
   display: none;
+  padding: 0;
 }
 @media (max-width: 769px) {
   .mobile-only {
     display: block;
-    background: url(../images/global-image/bg-image.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: #fff;
   }
 }
 
@@ -3779,6 +3788,26 @@ html[dir=ltr] .project-value-swiper-slider .title-swiper .counting-div::after {
   position: fixed;
   top: 92px;
   width: 100%;
+}
+
+.sucess-partner {
+  background: url(../images/global-image/bg-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 0;
+}
+.sucess-partner h2 {
+  color: #393939;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "avenir-bold", sans-serif;
+}
+.sucess-partner .interactive-section-swiper {
+  background: transparent;
+  padding: 1rem;
 }
 
 @media only screen and (min-width: 991px) and (min-width: 991px) {

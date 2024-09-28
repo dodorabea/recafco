@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Recafco</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/images/fav/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
+    <!-- bootstrap v5.3.3 css -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.rtl.min.css"> -->
+    <!-- Aos Animation css -->
+    <link rel="stylesheet" type="text/css" href="assets/aos/css/aos.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper-bundle.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/sass/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/gsap.min.js"></script>
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="vertical">
+    <!--Preloader-->
+    <div id="preloader-background">
+        <div id="circle-loader"></div>
+        <img id="centre-logo" src="assets/images/logo/color-recafco-logo.svg" alt="logo" />
+    </div>
+    <!--Header-->
+    <header data-lenis-prevent>
+        <nav class="navbar navbar-expand-lg menu-sticky">
+            <div class="container-fluid">
+                <a class="navbar-brand desktop-only" href="index.html">
+                    <img src="assets/images/logo/white-logo.svg" alt="Logo" />
+                </a>
+                <button class="navbar-toggle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="assets/images/icon/menubtton.svg" alt="icon" />
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!----------------------------------------------------------------->
+                    <div class="header-nav-mobile-only">
+                        <img src="assets/images/logo/color-recafco-logo.svg" alt="Logo" />
+                        <a href="#" class="language-btn">العربية</a>
+                    </div>
+                    <!----------------------------------------------------------------->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="about.html">about</a>
+                            <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="production.html">Production</a>
+                            <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="construction.html">Construction</a>
+                            <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="all-projects.html">Projects</a>
+                            <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">contacts</a>
+                            <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon" />
+                        </li>
+                        <li class="icon-mobile">
+                            <div class="input-group d-flex align-items-center justify-content-between">
+                                <input type="text" class="form-control" placeholder="Scientific Center"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <a href="not-found.html" class="btn" type="button">
+                                        <img src="assets/images/icon/search.svg" alt="icon" />
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbar-other-option d-flex align-items-center gap-3">
+                        <a href="#">العربية</a>
+                        <a href="#">
+                            <img src="assets/images/icon/nav-instagram.svg" alt="icon" />
+                        </a>
+                        <a href="#">
+                            <img src="assets/images/icon/nav-linkedin.svg" alt="icon" />
+                        </a>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img class="search" src="assets/images/icon/search.svg" alt="icon" />
+                            <img class="close" src="assets/images/icon/close.svg" alt="icon" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid p-0">
+            <div class="accordion-item desktop-only">
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search..."
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                            <a href="not-found.html" type="button">
+                                <img src="assets/images/icon/search.svg" alt="search">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="logo-mobile">
+        <img src="assets/images/logo/color-recafco-logo.svg" alt="image" />
+    </div>
+    <!--main-slider-->
+    <section class="home-main-slider position-relative">
+        <!-- Swiper -->
+        <div class="swiper mySwiper main-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position-relative">
+                    <div class="image-slider">
+                        <img class="d-block w-100 img-fluid" src="assets/images/slider/slider-one.PNG" alt="image" />
+                    </div>
+                    <div class="content-slider">
+                        <div class="container-fluid">
+
+                            <a href="#" class="button button--link hover-add-underline">
+                                <span>General Education & students services building, <span>PAAet</span></span>
+                                <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
+                            </a>
+                            <div class="mobile-only-section button-group">
+                                <a href="production.html" class="button button--link hover-add-underline">
+                                    see projects
+                                </a>
+                                <a href="help.html" class="button dark-button button--link hover-add-underline">
+                                    send inquiry
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide position-relative">
+                    <div class="image-slider">
+                        <img class="d-block w-100 img-fluid" src="assets/images/slider/slider-two.PNG" alt="image" />
+                    </div>
+                    <div class="content-slider">
+                        <div class="container-fluid">
+                            <a href="#" class="button button--link hover-add-underline">
+                                <span>General Education</span>
+                                <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide position-relative">
+                    <div class="image-slider">
+                        <img class="d-block w-100 img-fluid" src="assets/images/slider/slider-three.PNG" alt="image" />
+                    </div>
+                    <div class="content-slider">
+                        <div class="container-fluid">
+                            <a href="#" class="button button--link hover-add-underline">
+                                <span>General Education & students services building, <span>PAAet</span></span>
+                                <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide position-relative">
+                    <div class="image-slider">
+                        <img class="d-block w-100 img-fluid" src="assets/images/slider/slider-four.PNG" alt="image" />
+                    </div>
+                    <div class="content-slider">
+                        <div class="container-fluid">
+                            <a href="#" class="button button--link hover-add-underline">
+                                <span>General Education</span>
+                                <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide position-relative">
+                    <div class="image-slider">
+                        <img class="d-block w-100 img-fluid" src="assets/images/slider/slider-five.PNG" alt="image" />
+                    </div>
+                    <div class="content-slider">
+                        <div class="container-fluid">
+                            <a href="#" class="button button--link hover-add-underline">
+                                <span>General Education</span>
+                                <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next main-swiper-arrow">
+                <img src="assets/images/icon/arrow-right.svg" alt="images" />
+            </div>
+            <div class="swiper-button-prev main-swiper-arrow">
+                <img src="assets/images/icon/arrow-left.svg" alt="images" />
+            </div>
+        </div>
+    </section>
+    <!--Second Section-->
+    <section class="second-section">
+        <div class="container">
+            <div class="second-section-content">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-5 col-3">
+                        <div class="d-flex flex-column align-items-end">
+                            <div class="counter position-relative text-center">
+                                <div class="counting" data-count="48">0</div>
+                                <p>Years</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-1">
+                        <div class="sperator position-relative"></div>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-8">
+                        <h5 class="mb-1">Reaching new heights</h5>
+                        <p>
+                            Our precast division leads the industry with high-volume production and innovative
+                            solutions,
+                            adhering to strict government standards.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--Mobile Section Only-->
+    <section class="mobile-only-section about-home-section">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-6">
+                    <div class="first-image">
+                        <img class="w-100 img-fluid" src="assets/images/projects/proj1.png" alt="image" />
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="second-image">
+                        <img class="w-100 img-fluid" src="assets/images/projects/proj2.PNG" alt="image" />
+                        <img class="w-100 img-fluid" src="assets/images/projects/proj3.PNG" alt="image" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <span>RECAFCO</span> powers Kuwait's growth with top-tier manufacturing & mega-projects,
+                        supporting <span>Kuwait 2035 vision.</span>
+                    </p>
+                    <a href="about.html" class="button button--primary bg-red hover-add-swipe">
+                        About Recafco
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section swiper and counter-->
+    <section class="details-section" data-aos="fade-up">
+        <div class="container-fluid p-0">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12 col-sm-12 p-0">
+                    <div class="first-details-description">
+                        <div class="row justify-content-end">
+                            <div class="col-lg-8 col-md-12 col-sm-12">
+                                <p>
+                                    <span>RECAFCO</span> drives Kuwait's growth through exceptional manufacturing and
+                                    mega-project execution, aligning with global standards and the <span>Kuwait 2035
+                                        vision.</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12 p-0">
+                    <div class="interactive-section-image-part h-100">
+                        <div class='container_sec'>
+                            <div class='reveal'>
+                                <img class="img-fluid w-100" src="assets/images/global-image/first-right.png"
+                                    alt="image" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </section>
+    <!--Section swiper and counter-->
+    <section class="interactive-section sucess-partner" data-aos="fade-up">
+        <div class="container-fluid p-0">
+            <h2>Success Partners</h2>
+            <div class="row align-items-center">
+                <!---->
+                <div class="col-lg-9 col-md-8 col-sm-12 p-0">
+                    <div class="interactive-section-swiper position-relative">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 col-md-11">
+                                <!-- Swiper -->
+                                <div class="swiper mySwiper clients">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part1.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part2.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part3.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part4.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part5.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part6.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part5.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+                                        <div class="swiper-slide">
+                                            <div class="box">
+                                                <img src="assets/images/client-logo/part6.svg" alt="logo" />
+                                            </div>
+                                        </div>
+                                        <!---->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Section-->
+    <section class="logo-with-description mobile-only" data-aos="fade-up">
+        <div class="container-fluid p-0">
+            <h2>Certificates & Memberships</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-9 col-md-8 col-sm-12 p-0">
+                    <div class="h-100 logo-content-section position-relative">
+                        <div class="row justify-content-center">
+                            <!--Have script in the end of page Swiper -->
+                            <div class="swiper mySwiper three-logo">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="item  text-center">
+                                            <img class="d-block m-auto" src="assets/images/logo/pci.PNG" alt="logo" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item  text-center">
+                                            <img class="d-block m-auto" src="assets/images/logo/cfa.PNG" alt="logo" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item  text-center">
+                                            <img class="d-block m-auto" src="assets/images/logo/pci.PNG" alt="logo" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item  text-center">
+                                            <img class="d-block m-auto" src="assets/images/logo/aci.PNG" alt="logo" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item  text-center">
+                                            <img class="d-block m-auto" src="assets/images/logo/pci.PNG" alt="logo" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Section swiper and counter-->
+<section class="interactive-section" data-aos="fade-up">
+    <div class="container-fluid p-0">
+        <div class="row align-items-center">
+            <div class="col-lg-3 col-md-4 col-sm-12 p-0">
+                <div class="interactive-section-image-part h-100">
+                    <div class='container_sec'>
+                        <div class='reveal'>
+                            <img class="img-fluid w-100" src="assets/images/global-image/image-swiper-counter.png"
+                                alt="image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="col-lg-9 col-md-8 col-sm-12 p-0">
+                <div class="interactive-section-counter">
+                    <div
+                        class="item position-relative d-flex align-items-center justify-content-center flex-column">
+                        <div class="counting-div d-flex align-items-center mb-3 gap-1">
+                            <div class="counting" data-count="1000">0</div>
+                            <span>+</span>
+                        </div>
+                        <p>Completed projects</p>
+                    </div>
+                    <!---->
+                    <div
+                        class="item position-relative d-flex align-items-center justify-content-center flex-column">
+                        <div class="counting-div d-flex align-items-center mb-3 gap-1">
+                            <div class="counting" data-count="700">0</div>
+                            <span>+</span>
+                        </div>
+                        <p>Employees strong and growing</p>
+                    </div>
+                    <!---->
+                    <div
+                        class="item position-relative d-flex align-items-center justify-content-center flex-column">
+                        <div class="counting-div d-flex align-items-center mb-3 gap-1">
+                            <div class="counting" data-count="50">0</div>
+                            <span>+</span>
+                        </div>
+                        <p>Awards won</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+   
+
+
+    <!---->
+    <section class="build-together position-relative mobile-only">
+        <div class="mobile-upper-text align-items-center justify-content-center flex-column row-gap-3">
+            <h4>let’s build <span class="d-block">together</span></h4>
+            <a href="help.html" class="button button--primary bg-red hover-add-swipe">
+                view career openings
+            </a>
+        </div>
+        <div class="flex-reverse p-0">
+            <div
+                class="build-together-absolute-box d-flex align-items-center justify-content-center flex-column row-gap-3">
+                <span>let’s talk</span>
+                <h4>need to reach us?</h4>
+                <a href="help.html" class="button button--primary bg-red hover-add-swipe">
+                    Contact us
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-9 col-sm-12">
+                    <div class="build-together-image-part position-relative d-flex align-items-center"
+                        style="background: url(assets/images/production/contact.PNG);">
+                        <div class="text-image">
+                            <h4>let’s build <span class="d-block">together</span></h4>
+                            <a href="help.html" class="button button--primary bg-red hover-add-swipe">
+                                view career openings
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="white-bg">
+        <div class="container">
+            <!---->
+            <div class="footer__top d-flex align-items-center flex-wrap gap-5 row-gap-3">
+                <div class="logo">
+                    <img src="assets/images/logo/color-recafco-logo.svg" alt="Logo" />
+                </div>
+                <a href="#" class="button button--link hover-add-underline d-flex align-items-center gap-3">
+                    <span>For sales inquires</span>
+                    <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
+                </a>
+            </div>
+            <!---->
+            <div class="footer__center d-flex flex-wrap align-items-center row-gap-4">
+                <div class="social-media d-flex align-items-center gap-3">
+                    <a href="#" target="_blank" class="d-block">
+                        <img src="assets/images/icon/instagram.svg" alt="instagram" />
+                    </a>
+                    <a href="#" target="_blank" class="d-block">
+                        <img src="assets/images/icon/mail.svg" alt="e-mail" />
+                    </a>
+                    <a href="#" target="_blank" class="d-block">
+                        <img src="assets/images/icon/linked.svg" alt="linked in" />
+                    </a>
+                    <a href="#" target="_blank" class="d-block">
+                        <img class="youtube" src="assets/images/icon/youtube.svg" alt="youtube" />
+                    </a>
+                </div>
+                <!---->
+                <div class="nav--footer">
+                    <ul class="d-flex flex-wrap align-items-center justify-content-center">
+                        <li><a href="help.html" target="_blank">Contact</a></li>
+                        <li><a href="about.html" target="_blank">about</a></li>
+                        <li><a href="construction.html" target="_blank">Construction</a></li>
+                        <li><a href="all-projects.html" target="_blank">projects</a></li>
+                        <li><a href="production.html" target="_blank">Precast</a></li>
+                        <li><a href="production.html" target="_blank">Hollowcore</a></li>
+                        <li><a href="production.html" target="_blank">GRC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="content d-flex flex-wrap align-items-center  row-gap-3">
+                    <a href="#" class="text button button--link hover-add-underline d-flex align-items-center gap-3">
+                        career openings
+                    </a>
+                    <p class="copyright">
+                        ©2024 Real Estate Construction & Fabrication Co. - K.S.C (Closed) Kuwait. All Rights Reserved.
+                        Powered by <a href="#">JARA</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/jq/jQuery.js"></script>
+    <!-- AOS JS -->
+    <script src="assets/aos/js/aos.js"></script>
+    <!--ScrollTrigger-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--lenis-->
+    <script src="assets/js/lenis.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/script_lenis.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/swiper/js/swiper.min.js"></script>
+    <!--Main Js-->
+    <script src="assets/js/main.js"></script>
+    <!--main-swiper-->
+    <script>
+        var swiperMain = new Swiper(".mySwiper.main-swiper", {
+            // autoplay: {
+            // delay: 4000,
+            // disableOnInteraction: false,
+            // },
+            speed: 4000,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next.main-swiper-arrow",
+                prevEl: ".swiper-button-prev.main-swiper-arrow",
+            },
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiperClients = new Swiper(".mySwiper.clients", {
+            slidesPerView: 4,
+            autoplay: true,
+            spaceBetween: 10,
+            breakpoints: {
+                0: {
+                    slidesPerView: 4,
+                },
+                400: {
+                    slidesPerView: 4,
+                },
+                880: {
+                    slidesPerView: 4,
+                },
+                1025: {
+                    slidesPerView: 6,
+                },
+                1366: {
+                    slidesPerView: 7,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next.clients",
+                prevEl: ".swiper-button-prev.clients",
+            },
+        });
+    </script>
+    <!-- Initialize three-logo -->
+    <script>
+        var swiperLogo = new Swiper(".mySwiper.three-logo", {
+            autoplay: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 3,
+                },
+                400: {
+                    slidesPerView: 3,
+                },
+                880: {
+                    slidesPerView: 3,
+                },
+                1025: {
+                    slidesPerView: 3,
+                },
+                1366: {
+                    slidesPerView: 3,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next.three-logo-arrow",
+                prevEl: ".swiper-button-prev.three-logo-arrow",
+            },
+        });
+    </script>
+    <!--five-logo Swiper-->
+    <script>
+        var swiperFiveLogo = new Swiper(".mySwiper.five-logo", {
+            spaceBetween: 10,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                400: {
+                    slidesPerView: 2,
+                },
+                880: {
+                    slidesPerView: 3,
+                },
+                1025: {
+                    slidesPerView: 4,
+                },
+                1366: {
+                    slidesPerView: 5,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next.five-logo-arrow",
+                prevEl: ".swiper-button-prev.five-logo-arrow",
+            },
+        });
+    </script>
+</body>
+
+</html>
