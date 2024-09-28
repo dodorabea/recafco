@@ -288,6 +288,18 @@ h6 {
 }
 
 /*====header=====*/
+.logo-mobile{
+    display: none;
+    @media (max-width: 991.98px){
+        display: flex;
+        @include position( absolute , 60px, 0, unset, 0);
+        z-index: 11;
+        margin:auto;
+        img{
+            margin: 0 auto;
+        }
+    }
+}
 .navbar-toggle {
     position: relative;
 
@@ -304,7 +316,11 @@ h6 {
         z-index: 9999;
         -webkit-transition: all 1s ease-out;
         transition: all 1s ease-out;
-
+        .accordion-button
+        {
+            border-left: 0.105rem solid #fff;
+            @include property_dir('padding', 'right', 11px);
+        }
         .navbar {
             padding: 0.5rem 1rem;
 
@@ -359,7 +375,12 @@ h6 {
             }
 
             &:hover {
+
                 @media (min-width: 991px) {
+                    .accordion-button
+                        {
+                            border-left: 0.105rem solid #393939;
+                        }
                     background: #F7F7F7;
 
                     .nav-link {
@@ -412,6 +433,10 @@ h6 {
         }
 
         &.header-with-bg {
+            .accordion-button
+                {
+                    border-left: 0.105rem solid #393939;
+                }
             .navbar-brand {
                 img {
                     filter: unset !important;
@@ -451,11 +476,7 @@ h6 {
         }
 
     }
-    .accordion-button
-    {
-        border-left: 0.105rem solid #393939;
-        @include property_dir('padding', 'right', 11px);
-    }
+    
 }
 
 .sticky {
@@ -679,6 +700,7 @@ img.search {
         border: 1px solid #F9F9F9;
         background: #F9F9F9;
         padding: 1rem;
+        z-index: 111;
     }
 
     .navbar-nav {

@@ -1200,6 +1200,31 @@ html[dir=ltr] #preloader-background {
 }
 
 /*====header=====*/
+.logo-mobile {
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .logo-mobile {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    bottom: unset;
+    z-index: 11;
+    margin: auto;
+  }
+  html[dir=rtl] .logo-mobile {
+    right: 0;
+    left: 0;
+  }
+  html[dir=ltr] .logo-mobile {
+    right: 0;
+    left: 0;
+  }
+  .logo-mobile img {
+    margin: 0 auto;
+  }
+}
+
 .navbar-toggle {
   position: relative;
 }
@@ -1214,6 +1239,15 @@ html[dir=ltr] #preloader-background {
     width: 100%;
     z-index: 9999;
     transition: all 1s ease-out;
+  }
+  header .accordion-button {
+    border-left: 0.105rem solid #fff;
+  }
+  html[dir=rtl] header .accordion-button {
+    padding-right: 11px;
+  }
+  html[dir=ltr] header .accordion-button {
+    padding-left: 11px;
   }
   header .navbar {
     padding: 0.5rem 1rem;
@@ -1264,6 +1298,9 @@ html[dir=ltr] #preloader-background {
   header .navbar:hover {
     background: #F7F7F7;
   }
+  header .navbar:hover .accordion-button {
+    border-left: 0.105rem solid #393939;
+  }
   header .navbar:hover .nav-link {
     color: #393939;
   }
@@ -1299,6 +1336,9 @@ html[dir=ltr] #preloader-background {
   header .sticky img {
     filter: brightness(0) saturate(100%) invert(16%) sepia(5%) saturate(25%) hue-rotate(314deg) brightness(108%) contrast(84%) !important;
   }
+  header.header-with-bg .accordion-button {
+    border-left: 0.105rem solid #393939;
+  }
   header.header-with-bg .navbar-brand img {
     filter: unset !important;
   }
@@ -1327,15 +1367,6 @@ html[dir=ltr] #preloader-background {
     background: rgba(249, 249, 249, 0.8);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
-  }
-  .accordion-button {
-    border-left: 0.105rem solid #393939;
-  }
-  html[dir=rtl] .accordion-button {
-    padding-right: 11px;
-  }
-  html[dir=ltr] .accordion-button {
-    padding-left: 11px;
   }
 }
 .sticky {
@@ -1508,6 +1539,7 @@ img.search {
     border: 1px solid #F9F9F9;
     background: #F9F9F9;
     padding: 1rem;
+    z-index: 111;
   }
   .navbar-nav .nav-link {
     color: #393939 !important;
