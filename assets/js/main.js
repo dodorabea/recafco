@@ -34,17 +34,19 @@
       var $this = $(this),
           countTo = $this.attr('data-count');
       
-      // Check if the element is in view
       if ($this.offset().top <= $(window).scrollTop() + $(window).height()) {
-        
-        // Start the counting animation
         $({ countNum: $this.text() }).animate({
           countNum: countTo
         }, {
           duration: 1500,
           easing: 'linear',
           step: function() {
-            $this.text(Math.floor(this.countNum));
+            var decimal = countTo.split('.')[1];
+            if(decimal) {
+              $this.text(parseFloat(this.countNum).toFixed(1));
+            } else {
+              $this.text(Math.floor(this.countNum));
+            }
           },
           complete: function() {
             $this.text(this.countNum);

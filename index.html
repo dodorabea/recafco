@@ -85,9 +85,9 @@
                                 <input type="text" class="form-control" placeholder="Scientific Center"
                                     aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <button class="btn" type="button">
+                                    <a href="not-found.html" class="btn" type="button">
                                         <img src="assets/images/icon/search.svg" alt="icon" />
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </li>
@@ -100,7 +100,8 @@
                         <a href="#">
                             <img src="assets/images/icon/nav-linkedin.svg" alt="icon" />
                         </a>
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <img class="search" src="assets/images/icon/search.svg" alt="icon" />
                             <img class="close" src="assets/images/icon/close.svg" alt="icon" />
                         </button>
@@ -112,19 +113,20 @@
             <div class="accordion-item desktop-only">
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" placeholder="Search..."
+                            aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                          <button  type="button">
-                            <img src="assets/images/icon/search.svg" alt="search">
-                          </button>
+                            <a href="not-found.html" type="button">
+                                <img src="assets/images/icon/search.svg" alt="search">
+                            </a>
                         </div>
                     </div>
-                  </div>
-              </div>
+                </div>
+            </div>
         </div>
     </header>
     <div class="logo-mobile">
-        <img src="assets/images/logo/color-recafco-logo.svg" alt="image"/>
+        <img src="assets/images/logo/color-recafco-logo.svg" alt="image" />
     </div>
     <!--main-slider-->
     <section class="home-main-slider position-relative">
@@ -137,10 +139,19 @@
                     </div>
                     <div class="content-slider">
                         <div class="container-fluid">
+
                             <a href="#" class="button button--link hover-add-underline">
                                 <span>General Education & students services building, <span>PAAet</span></span>
                                 <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
                             </a>
+                            <div class="mobile-only-section button-group">
+                                <a href="production.html" class="button button--link hover-add-underline">
+                                    see projects
+                                </a>
+                                <a href="help.html" class="button dark-button button--link hover-add-underline">
+                                    send inquiry
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,6 +244,34 @@
                 </div>
 
 
+            </div>
+        </div>
+    </section>
+    <!--Mobile Section Only-->
+    <section class="mobile-only-section about-home-section">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-6">
+                    <div class="first-image">
+                        <img class="w-100 img-fluid" src="assets/images/projects/proj1.png" alt="image"/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="second-image">
+                        <img class="w-100 img-fluid" src="assets/images/projects/proj2.PNG" alt="image"/>
+                        <img class="w-100 img-fluid" src="assets/images/projects/proj3.PNG" alt="image"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <span>RECAFCO</span> powers Kuwait's growth with top-tier manufacturing & mega-projects, supporting <span>Kuwait 2035 vision.</span>
+                    </p>
+                    <a href="about.html" class="button button--primary bg-red hover-add-swipe">
+                        About Recafco
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -546,6 +585,38 @@
             </div>
         </div>
     </section>
+    <!---->
+    <section class="build-together position-relative mobile-only">
+        <div class="mobile-upper-text align-items-center justify-content-center flex-column row-gap-3">
+            <h4>let’s build <span class="d-block">together</span></h4>
+            <a href="help.html" class="button button--primary bg-red hover-add-swipe">
+                view career openings
+            </a>
+        </div>
+        <div class="flex-reverse p-0">
+            <div
+                class="build-together-absolute-box d-flex align-items-center justify-content-center flex-column row-gap-3">
+                <span>let’s talk</span>
+                <h4>need to reach us?</h4>
+                <a href="help.html" class="button button--primary bg-red hover-add-swipe">
+                    Contact us
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-9 col-sm-12">
+                    <div class="build-together-image-part position-relative d-flex align-items-center"
+                        style="background: url(assets/images/production/contact.PNG);">
+                        <div class="text-image">
+                            <h4>let’s build <span class="d-block">together</span></h4>
+                            <a href="help.html" class="button button--primary bg-red hover-add-swipe">
+                                view career openings
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--Footer-->
     <footer>
         <div class="container">
@@ -578,13 +649,13 @@
                 <!---->
                 <div class="nav--footer">
                     <ul class="d-flex flex-wrap align-items-center justify-content-center">
-                        <li><a href="#" target="_blank">Contact</a></li>
-                        <li><a class="active" href="#" target="_blank">about</a></li>
-                        <li><a href="#" target="_blank">Construction</a></li>
-                        <li><a href="#" target="_blank">projects</a></li>
-                        <li><a href="#" target="_blank">Precast</a></li>
-                        <li><a href="#" target="_blank">Hollowcore</a></li>
-                        <li><a href="#" target="_blank">GRC</a></li>
+                        <li><a href="help.html" target="_blank">Contact</a></li>
+                        <li><a href="about.html" target="_blank">about</a></li>
+                        <li><a href="construction.html" target="_blank">Construction</a></li>
+                        <li><a href="all-projects.html" target="_blank">projects</a></li>
+                        <li><a href="not-found.html" target="_blank">Precast</a></li>
+                        <li><a href="not-found.html" target="_blank">Hollowcore</a></li>
+                        <li><a href="not-found.html" target="_blank">GRC</a></li>
                     </ul>
                 </div>
             </div>
@@ -593,9 +664,9 @@
         <div class="footer__bottom">
             <div class="container">
                 <div class="content d-flex flex-wrap align-items-center  row-gap-3">
-                    <p class="text">
+                    <a href="#" class="text button button--link hover-add-underline d-flex align-items-center gap-3">
                         career openings
-                    </p>
+                    </a>
                     <p class="copyright">
                         ©2024 Real Estate Construction & Fabrication Co. - K.S.C (Closed) Kuwait. All Rights Reserved.
                         Powered by <a href="#">JARA</a>
