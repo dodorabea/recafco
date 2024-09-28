@@ -903,6 +903,10 @@ img.search {
             height: 50px;
             width: 2.5px;
             margin: auto;
+            @media (max-width: 769px){
+                height: 120px;
+                width: 1.5px;
+            }
         }
     }
 
@@ -3153,4 +3157,58 @@ footer {
     position: fixed;
     top: 92px;
     width: 100%;
+}
+
+html[dir="rtl"]{
+    @media only screen and (min-width: 991px) and (min-width: 991px) {
+        header .navbar:hover .accordion-button {
+            border-left: unset;
+        }
+    }
+    .button {
+        img{
+            backface-visibility: visible;
+            transform: perspective(140px) rotateY(180deg);
+        }
+    }
+    .icon-mobile
+    {
+        backface-visibility: visible;
+        transform: perspective(140px) rotateY(180deg);
+    }
+    header .accordion-button {
+        border-right: 0.105rem solid #fff;
+        border-left: unset;
+    }
+    header .sticky .accordion-button {
+        border-right: 0.105rem solid #393939;
+        border-left: unset;
+    }
+    .header-with-bg .accordion-button 
+    {
+        border-right: 0.105rem solid #393939;
+        border-left: unset;
+    }
+    @media only screen and (min-width: 991px) {
+        header .navbar .navbar-nav {
+            margin-right: auto;
+            margin-left: unset;
+        }
+    }
+    .type {
+        position: absolute;
+        right: 6.3%;
+        left: unset;
+        transform-origin: right bottom;
+        transform: rotate(90deg) translateY(100%);
+    }
+    .related-project .arrow{
+        flex-direction: row;
+    }
+    .project-value-arrow{
+        img{
+            backface-visibility: visible;
+            transform: perspective(140px) rotateY(180deg);
+        }
+    }
 }

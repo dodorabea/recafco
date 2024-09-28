@@ -1705,6 +1705,12 @@ html[dir=ltr] .second-section .sperator::after {
   right: 0;
   left: 0;
 }
+@media (max-width: 769px) {
+  .second-section .sperator::after {
+    height: 120px;
+    width: 1.5px;
+  }
+}
 .second-section .counter .counting {
   font-size: 2rem;
   color: #393939;
@@ -3773,4 +3779,50 @@ html[dir=ltr] .project-value-swiper-slider .title-swiper .counting-div::after {
   position: fixed;
   top: 92px;
   width: 100%;
+}
+
+@media only screen and (min-width: 991px) and (min-width: 991px) {
+  html[dir=rtl] header .navbar:hover .accordion-button {
+    border-left: unset;
+  }
+}
+html[dir=rtl] .button img {
+  backface-visibility: visible;
+  transform: perspective(140px) rotateY(180deg);
+}
+html[dir=rtl] .icon-mobile {
+  backface-visibility: visible;
+  transform: perspective(140px) rotateY(180deg);
+}
+html[dir=rtl] header .accordion-button {
+  border-right: 0.105rem solid #fff;
+  border-left: unset;
+}
+html[dir=rtl] header .sticky .accordion-button {
+  border-right: 0.105rem solid #393939;
+  border-left: unset;
+}
+html[dir=rtl] .header-with-bg .accordion-button {
+  border-right: 0.105rem solid #393939;
+  border-left: unset;
+}
+@media only screen and (min-width: 991px) {
+  html[dir=rtl] header .navbar .navbar-nav {
+    margin-right: auto;
+    margin-left: unset;
+  }
+}
+html[dir=rtl] .type {
+  position: absolute;
+  right: 6.3%;
+  left: unset;
+  transform-origin: right bottom;
+  transform: rotate(90deg) translateY(100%);
+}
+html[dir=rtl] .related-project .arrow {
+  flex-direction: row;
+}
+html[dir=rtl] .project-value-arrow img {
+  backface-visibility: visible;
+  transform: perspective(140px) rotateY(180deg);
 }/*# sourceMappingURL=general.css.map */
