@@ -10,13 +10,16 @@
   };
   // sticky menu
   var header = $('.menu-sticky');
+  var search = $('.accordion-item.desktop-only');
   var win = $(window);
   win.on('scroll', function() {
      var scroll = win.scrollTop();
      if (scroll < 300) {
          header.removeClass("sticky");
+         search.removeClass("position");
      } else {
          header.addClass("sticky");
+         search.addClass("position");
      }
   });
   /*=====AOS animation=====*/

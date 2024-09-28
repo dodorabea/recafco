@@ -3097,7 +3097,7 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
-  gap: 2rem;
+  gap: 1rem;
 }
 .related-project .arrow-related-proj {
   left: unset;
@@ -3750,4 +3750,27 @@ html[dir=ltr] .project-value-swiper-slider .title-swiper .counting-div::after {
   padding: 1rem 0;
   color: #767577;
   font-family: "avenir-medium", sans-serif;
+}
+.not-found .error-code {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: "avenir-bold", sans-serif;
+}
+.not-found .error-message {
+  border-top: 0.1875rem solid #CFCFCF;
+  padding-top: 1rem;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  font-family: "avenir-semibold", sans-serif;
+}
+
+.position {
+  position: fixed;
+  top: 92px;
+  width: 100%;
 }/*# sourceMappingURL=general.css.map */
