@@ -41,7 +41,7 @@
         <img id="centre-logo" src="assets/images/logo/color-recafco-logo.svg" alt="logo" />
     </div>
     <!--Header-->
-    <header  data-lenis-prevent>
+    <header data-lenis-prevent>
         <nav class="navbar navbar-expand-lg menu-sticky">
             <div class="container-fluid">
                 <a class="navbar-brand desktop-only" href="index.html">
@@ -61,7 +61,7 @@
                     <!----------------------------------------------------------------->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="about.html">about</a>
+                            <a class="nav-link " aria-current="page" href="about.html">about</a>
                             <img class="icon-mobile" src="assets/images/icon/arrow-nav.svg" alt="icon" />
                         </li>
                         <li class="nav-item">
@@ -100,14 +100,31 @@
                         <a href="#">
                             <img src="assets/images/icon/nav-linkedin.svg" alt="icon" />
                         </a>
-                        <a href="#">
-                            <img src="assets/images/icon/search.svg" alt="icon" />
-                        </a>
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <img class="search" src="assets/images/icon/search.svg" alt="icon" />
+                            <img class="close" src="assets/images/icon/close.svg" alt="icon" />
+                        </button>
                     </div>
                 </div>
             </div>
+            
         </nav>
+        <div class="container-fluid p-0">
+            <div class="accordion-item desktop-only">
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append">
+                          <button  type="button">
+                            <img src="assets/images/icon/search.svg" alt="search">
+                          </button>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
     </header>
+
     <!--main-slider-->
     <section class="home-main-slider position-relative">
         <!-- Swiper -->
