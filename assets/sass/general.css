@@ -945,13 +945,58 @@
   src: url("../fonts/AvenirNextCyr-Demi.woff2") format("woff2"), url("../fonts/AvenirNextCyr-Demi.woff") format("woff"), url("../fonts/AvenirNextCyr-Demi.ttf") format("truetype"), url("../fonts/AvenirNextCyr-Demi.eot") format("eot");
   font-display: swap;
 }
+/*====arabic--------*/
+@font-face {
+  font-family: "GE-SS-Two-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GE-SS-Two-Light.woff2") format("woff2"), url("../fonts/GE-SS-Two-Light.woff") format("woff"), url("../fonts/GE-SS-Two-Light.ttf") format("truetype"), url("../fonts/GE-SS-Two-Light.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GE-SS-Two-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GE-SS-Two-Medium.woff2") format("woff2"), url("../fonts/GE-SS-Two-Medium.woff") format("woff"), url("../fonts/GE-SS-Two-Medium.ttf") format("truetype"), url("../fonts/GE-SS-Two-Medium.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GE-SS-Two-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GE-SS-Two-Bold.woff2") format("woff2"), url("../fonts/GE-SS-Two-Bold.woff") format("woff"), url("../fonts/GE-SS-Two-Bold.ttf") format("truetype"), url("../fonts/GE-SS-Two-Bold.eot") format("eot");
+  font-display: swap;
+}
 /*-----------------------
    fontFamily
 -------------------------*/
+@font-face {
+  font-family: "GE-SS-Two-Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GE-SS-Two-Light.woff2") format("woff2"), url("../fonts/GE-SS-Two-Light.woff") format("woff"), url("../fonts/GE-SS-Two-Light.ttf") format("truetype"), url("../fonts/GE-SS-Two-Light.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GE-SS-Two-Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GE-SS-Two-Medium.woff2") format("woff2"), url("../fonts/GE-SS-Two-Medium.woff") format("woff"), url("../fonts/GE-SS-Two-Medium.ttf") format("truetype"), url("../fonts/GE-SS-Two-Medium.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "GE-SS-Two-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GE-SS-Two-Bold.woff2") format("woff2"), url("../fonts/GE-SS-Two-Bold.woff") format("woff"), url("../fonts/GE-SS-Two-Bold.ttf") format("truetype"), url("../fonts/GE-SS-Two-Bold.eot") format("eot");
+  font-display: swap;
+}
+
 ::-moz-selection {
   background: rgb(79, 78, 81);
   color: #ffffff;
 }
+
 ::selection {
   background: rgb(79, 78, 81);
   color: #ffffff;
@@ -1053,13 +1098,17 @@ h6 {
 }
 
 /*====Pages======*/
-.about-page, .construction-page, .production-page {
+.about-page,
+.construction-page,
+.production-page {
   background: url(../images/global-image/desctop-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.about-page .padding-section, .construction-page .padding-section, .production-page .padding-section {
+.about-page .padding-section,
+.construction-page .padding-section,
+.production-page .padding-section {
   padding: 6rem 0;
 }
 
@@ -1249,7 +1298,9 @@ html[dir=ltr] #preloader-background {
     position: absolute;
     width: 100%;
     z-index: 9999;
-    transition: all 1s ease-out;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
   }
   header .accordion-button {
     border-left: 0.105rem solid #fff;
@@ -1261,7 +1312,7 @@ html[dir=ltr] #preloader-background {
     padding-left: 11px;
   }
   header .navbar {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
   }
   header .navbar .navbar-brand img {
     width: 62px;
@@ -1270,7 +1321,7 @@ html[dir=ltr] #preloader-background {
     margin-left: auto;
   }
   header .navbar .navbar-nav .nav-link {
-    font-size: 0.857rem;
+    font-size: 0.92rem;
     color: #F9F9F9;
     text-transform: uppercase;
     font-family: "avenir-bold", sans-serif;
@@ -1293,16 +1344,16 @@ html[dir=ltr] #preloader-background {
   }
   header .navbar .navbar-other-option img {
     width: 18px;
-    transition: all 1s ease-out;
   }
   header .navbar .navbar-other-option a {
     color: #F9F9F9;
   }
   header .navbar .navbar-other-option a:hover {
-    color: #EA262A;
+    color: #EA262A !important;
   }
-  header .navbar .navbar-other-option a:hover img {
-    filter: brightness(0) saturate(100%) invert(20%) sepia(78%) saturate(2440%) hue-rotate(330deg) brightness(111%) contrast(101%);
+  header .navbar .navbar-other-option a:hover img,
+  header .navbar .navbar-other-option a:hover img.search {
+    filter: brightness(0) saturate(100%) invert(20%) sepia(78%) saturate(2440%) hue-rotate(330deg) brightness(111%) contrast(101%) !important;
   }
 }
 @media only screen and (min-width: 991px) and (min-width: 991px) {
@@ -1331,7 +1382,7 @@ html[dir=ltr] #preloader-background {
     position: fixed !important;
     top: 0px;
     z-index: 1111;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
     margin: 0 auto !important;
     left: 0;
     right: 0;
@@ -1388,7 +1439,7 @@ html[dir=ltr] #preloader-background {
   position: fixed !important;
   top: 0px;
   z-index: 999;
-  padding: 1rem 0;
+  padding: 1rem 1.5rem;
   margin: 0 auto !important;
   left: 0;
   right: 0;
@@ -1484,7 +1535,7 @@ img.search {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0.25rem;
+    border-radius: 0.625rem;
     background: #393939;
     font-size: 0.895rem;
   }
@@ -1724,6 +1775,7 @@ html[dir=ltr] .second-section .sperator::after {
 }
 .second-section .counter .counting {
   font-size: 2rem;
+  line-height: 1.5rem;
   color: #393939;
   font-family: "avenir-bold", sans-serif;
 }
@@ -1784,8 +1836,11 @@ html[dir=ltr] .second-section .sperator::after {
   padding: 0 1rem;
 }
 @media (min-width: 769px) {
-  .details-section .first-details-description p {
-    padding: 0 10%;
+  html[dir=rtl] .details-section .first-details-description p {
+    padding-left: 10%;
+  }
+  html[dir=ltr] .details-section .first-details-description p {
+    padding-right: 10%;
   }
 }
 .details-section .first-details-description p span {
@@ -1812,8 +1867,11 @@ html[dir=ltr] .second-section .sperator::after {
   padding: 0 1rem;
 }
 @media (min-width: 769px) {
-  .details-section .second-details-description p {
-    padding: 0 10%;
+  html[dir=rtl] .details-section .second-details-description p {
+    padding-left: 10%;
+  }
+  html[dir=ltr] .details-section .second-details-description p {
+    padding-right: 10%;
   }
 }
 .details-section .second-details-description p span {
@@ -1824,7 +1882,7 @@ html[dir=ltr] .second-section .sperator::after {
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0;
+  border-radius: 0.625rem;
 }
 @media (max-width: 769px) {
   .details-section .row {
@@ -1900,6 +1958,7 @@ html[dir=ltr] .bulding-section .swiper-slide:not(:last-child)::after {
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.625rem;
 }
 
 /*===logo-with-description===*/
@@ -1918,6 +1977,7 @@ html[dir=ltr] .bulding-section .swiper-slide:not(:last-child)::after {
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 0.625rem 0.625rem 0 0;
 }
 .logo-with-description .swiper-slide {
   position: relative;
@@ -2012,10 +2072,10 @@ html[dir=ltr] .logo-with-description .swiper-slide:not(:last-child)::after {
 
 /*===interactive-section===*/
 .interactive-section .interactive-section-image-part img {
-  height: 295px;
+  height: 286px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0;
+  border-radius: 0.625rem;
 }
 @media (max-width: 1191px) {
   .interactive-section .interactive-section-image-part img {
@@ -2067,6 +2127,7 @@ html[dir=ltr] .logo-with-description .swiper-slide:not(:last-child)::after {
 }
 .interactive-section .interactive-section-counter .item .counting-div {
   font-size: 2.5rem;
+  line-height: 0.75rem;
   color: rgb(234, 38, 42);
   line-height: 1.625rem;
   font-family: "avenir-bold", sans-serif;
@@ -2102,12 +2163,8 @@ html[dir=ltr] .logo-with-description .swiper-slide:not(:last-child)::after {
   height: 100px;
 }
 .interactive-section .interactive-section-swiper .swiper-slide img {
-  width: 65px;
-}
-@media (min-width: 769px) {
-  .interactive-section .interactive-section-swiper .swiper-slide img {
-    width: 60px;
-  }
+  height: 4.5rem;
+  width: auto;
 }
 
 /*===Footer===*/
@@ -2188,7 +2245,6 @@ footer .footer__center {
 }
 footer .footer__center .social-media a img {
   width: 1.15rem;
-  transition: all 1s ease-out;
 }
 footer .footer__center .social-media a img.youtube {
   width: 1.4rem;
@@ -2220,7 +2276,7 @@ footer .footer__center .nav--footer ul li a {
     color: rgb(79, 78, 81);
   }
 }
-footer .footer__center .nav--footer ul li a:hover, footer .footer__center .nav--footer ul li a.active {
+footer .footer__center .nav--footer ul li a.active {
   color: rgb(234, 38, 42);
 }
 footer .footer__bottom {
@@ -2319,7 +2375,7 @@ footer .footer__bottom a.copyright a {
   font-size: 0.989rem;
   letter-spacing: 0.3px;
   line-height: 2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
   text-transform: uppercase;
   color: #F9F9F9;
   font-family: "avenir-bold", sans-serif;
@@ -2558,7 +2614,7 @@ footer .footer__bottom a.copyright a {
 }
 .overview-items .overview-items-details .button--primary {
   padding: 0.35rem 1rem;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
   text-transform: uppercase;
   border-radius: 0.155rem;
   font-family: "avenir-bold", sans-serif;
@@ -2572,7 +2628,7 @@ footer .footer__bottom a.copyright a {
 .body-description-part {
   background: #F4F4F4;
   padding: 3rem 4rem;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 .body-description-part h3 {
   font-size: 1.2rem;
@@ -2629,7 +2685,7 @@ footer .footer__bottom a.copyright a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 @media (min-width: 769px) {
   .body-description-part .button {
@@ -2697,7 +2753,7 @@ html[dir=ltr] .quality-assurance .body-description-part.absolute-position.revers
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 
 /*====================*/
@@ -2834,7 +2890,7 @@ html[dir=ltr] .quality-assurance .body-description-part.absolute-position.revers
 .build-together .build-together-absolute-box {
   height: -moz-max-content;
   height: max-content;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
   background: #F9F9F9;
   box-shadow: 10px 10px 35px -5px rgba(0, 0, 0, 0.15);
   padding: 7rem 1rem;
@@ -2902,7 +2958,7 @@ html[dir=ltr] .build-together .build-together-absolute-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 @media (min-width: 769px) {
   .build-together .build-together-absolute-box .button {
@@ -2914,7 +2970,7 @@ html[dir=ltr] .build-together .build-together-absolute-box {
   background-position: center !important;
   background-size: cover !important;
   min-height: 550px;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 @media (max-width: 769px) {
   .build-together .build-together-image-part {
@@ -2984,7 +3040,7 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 @media (min-width: 769px) {
   .build-together .build-together-image-part .text-image .button {
@@ -3001,7 +3057,7 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
     display: flex;
     height: -moz-max-content;
     height: max-content;
-    border-radius: 0.25rem;
+    border-radius: 0.625rem;
     background: #F4F4F4;
     box-shadow: 10px 10px 35px -5px rgba(0, 0, 0, 0.15);
     padding: 7rem 1rem;
@@ -3031,7 +3087,7 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 
 /*==========projects-section==========*/
@@ -3117,7 +3173,7 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
 .related-project .slider-item .slider-body {
   height: 390px;
   width: 100%;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
   overflow: hidden;
 }
 .related-project .slider-item .slider-body img {
@@ -3175,7 +3231,7 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 @media (min-width: 769px) {
   .related-project .button {
@@ -3210,7 +3266,7 @@ html[dir=ltr] .build-together .build-together-image-part .text-image {
   padding-left: calc(var(--bs-gutter-x) * 0.1);
 }
 .filters-taps-section .tab-content .box {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.625rem;
 }
 .filters-taps-section .filter-result-box {
   overflow: hidden;
@@ -3278,7 +3334,7 @@ html[dir=ltr] .filters-taps-section .filter-result-box .content-overlay {
   position: relative;
   height: 0;
   border: 1px solid #9E9DA0;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 .responsive-map iframe {
   left: 0;
@@ -3364,7 +3420,7 @@ html[dir=ltr] .filters-taps-section .filter-result-box .content-overlay {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
 }
 @media (min-width: 769px) {
   .help-section .button {
@@ -3621,7 +3677,7 @@ html[dir=ltr] .hero-section .text-box::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
   background: #EA262A;
   font-size: 0.789rem;
   margin-bottom: 1rem;
@@ -3673,7 +3729,7 @@ html[dir=ltr] .hero-section .text-box::after {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.25rem;
+  border-radius: 0.625rem;
   background: #EA262A;
   font-size: 0.789rem;
   margin-bottom: 1rem;
@@ -3932,4 +3988,34 @@ html[dir=rtl] .related-project .arrow {
 html[dir=rtl] .project-value-arrow img {
   backface-visibility: visible;
   transform: perspective(140px) rotateY(180deg);
+}
+
+.accordion-button:hover img {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(78%) saturate(2440%) hue-rotate(330deg) brightness(111%) contrast(101%) !important;
+}
+
+.nav-link:hover {
+  color: #EA262A !important;
+}
+
+/*================Arabic font=================================*/
+html[dir=ltr] body .navbar-other-option a:first-child {
+  font-family: "GE-SS-Two-Bold";
+}
+
+html[dir=rtl] body {
+  font-family: "GE-SS-Two-Light";
+  font-weight: 400;
+}
+html[dir=rtl] body .nav-link, html[dir=rtl] body .navbar-other-option {
+  font-family: "GE-SS-Two-Bold" !important;
+}
+html[dir=rtl] body ::-moz-placeholder {
+  font-family: "GE-SS-Two-Bold" !important;
+}
+html[dir=rtl] body ::placeholder {
+  font-family: "GE-SS-Two-Bold" !important;
+}
+html[dir=rtl] body .content-slider .button {
+  font-family: "GE-SS-Two-Bold" !important;
 }/*# sourceMappingURL=general.css.map */

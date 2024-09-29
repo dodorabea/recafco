@@ -59,6 +59,23 @@ normal,
 woff2 woff ttf eot);
 
 
+/*====arabic--------*/
+@include font-face("GE-SS-Two-Light",
+"../fonts/GE-SS-Two-Light",
+normal,
+normal,
+woff2 woff ttf eot);
+@include font-face("GE-SS-Two-Medium",
+"../fonts/GE-SS-Two-Medium",
+normal,
+normal,
+woff2 woff ttf eot);
+@include font-face("GE-SS-Two-Bold",
+"../fonts/GE-SS-Two-Bold",
+normal,
+normal,
+woff2 woff ttf eot);
+
 //howToCall: @include dFlex(center, center, 0);
 @mixin dFlex($align, $justify, $colGap: 0) {
     display: flex;
@@ -122,3 +139,4 @@ woff2 woff ttf eot);
         #{$type}-#{$t-direction}: $t-val;
     }
 }
+
