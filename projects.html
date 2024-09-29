@@ -129,11 +129,23 @@
     <div class="logo-mobile">
         <img src="assets/images/logo/color-recafco-logo.svg" alt="image" />
     </div>
-    <section
-        class="hero-section  without-overlay position-relative d-flex flex-column align-items-center justify-content-center"
-        style="background: url(assets/images/global-image/project-hero.PNG);">
-        <div class="container">
-
+    <!--main-slider-->
+    <section class="home-main-slider position-relative">
+        <!-- Swiper -->
+        <div class="swiper mySwiper main-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position-relative">
+                    <div class="image-slider">
+                        <img class="d-block w-100 img-fluid" src="assets/images/slider/slider-three.PNG" alt="image" />
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next main-swiper-arrow">
+                <img src="assets/images/icon/arrow-right.svg" alt="images" />
+            </div>
+            <div class="swiper-button-prev main-swiper-arrow">
+                <img src="assets/images/icon/arrow-left.svg" alt="images" />
+            </div>
         </div>
     </section>
     <div class="projects-section">
@@ -143,7 +155,7 @@
                     <div class="col-lg-7 col-md-12">
                         <div class="content d-flex flex-column row-gap-1">
                             <span>PROJECTS</span>
-                            <h3>The Warehouse Mall Multi-Storey CarPark</h3>
+                            <h3>The Warehouse Mall <br> Multi-Storey CarPark</h3>
                             <span class="location">ALAHMADI, KUWAIT</span>
                         </div>
                     </div>
@@ -222,7 +234,7 @@
                         <!-- Slide -->
                         <div class="swiper-slide">
                             <div class="swiper-image">
-                                <div class="image" style="background: url(assets/images/projects/proj1.png);"></div>
+                                <div class="image" style="background: url(assets/images/global-image/project-value.png);"></div>
                             </div>
                         </div>
                         <!-- Slide -->
@@ -255,7 +267,45 @@
                                 <div class="image" style="background: url(assets/images/projects/proj3.PNG);"></div>
                             </div>
                         </div>
+                         <!-- Slide -->
+                         <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <div class="image" style="background: url(assets/images/projects/proj3.PNG);"></div>
+                            </div>
+                        </div>
+                         <!-- Slide -->
+                         <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <div class="image" style="background: url(assets/images/projects/proj3.PNG);"></div>
+                            </div>
+                        </div>
+                         <!-- Slide -->
+                         <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <div class="image" style="background: url(assets/images/projects/proj3.PNG);"></div>
+                            </div>
+                        </div>
+                         <!-- Slide -->
+                         <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <div class="image" style="background: url(assets/images/projects/proj3.PNG);"></div>
+                            </div>
+                        </div>
+                         <!-- Slide -->
+                         <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <div class="image" style="background: url(assets/images/projects/proj3.PNG);"></div>
+                            </div>
+                        </div>
+                         <!-- Slide -->
+                         <div class="swiper-slide">
+                            <div class="swiper-image">
+                                <div class="image" style="background: url(assets/images/projects/proj3.PNG);"></div>
+                            </div>
+                        </div>
+                       
                     </div>
+                    <div class="swiper-pagination position-relative"></div>
                     <div class="swiper-button-prev project-value-arrow">
                         <img src="assets/images/icon/arrow-left.svg" alt="icon"/>
                     </div>
@@ -289,7 +339,7 @@
                     </div>
                 </div>
                 <!-- Swiper -->
-                <div class="swiper mySwiper related-project">
+                <div class="swiper mySwiper halfContainer related-project">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="slider-item">
@@ -349,7 +399,7 @@
     </div>
 
     <!---->
-    <section class="build-together position-relative">
+    <section class="build-together position-relative bg-white">
         <div class="mobile-upper-text align-items-center justify-content-center flex-column row-gap-3">
             <h4>let’s build <span class="d-block">together</span></h4>
             <a href="help.html" class="button button--primary bg-red hover-add-swipe">
@@ -408,7 +458,7 @@
     <script>
         var swiper = new Swiper(".mySwiper.related-project", {
             slidesPerView: 1,
-            autoplay: true,
+            autoplay: false,
             spaceBetween: 30,
             breakpoints: {
                 0: {
@@ -421,10 +471,10 @@
                     slidesPerView: 1.5,
                 },
                 1025: {
-                    slidesPerView: 2,
+                    slidesPerView: 2.2,
                 },
                 1366: {
-                    slidesPerView: 2,
+                    slidesPerView: 2.15,
                 }
             },
             navigation: {
@@ -438,16 +488,38 @@
             loop: true,
             autoplay:true,
             slidesPerView: 'auto',
-            spaceBetween: 0,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: true
             },
             centeredSlides: true,
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
             navigation: {
                 nextEl: '.swiper-button-next.project-value-arrow',
                 prevEl: '.swiper-button-prev.project-value-arrow',
             }
+        });
+    </script>
+    <!--main-swiper-->
+    <script>
+        var swiperMain = new Swiper(".mySwiper.main-swiper", {
+            // autoplay: {
+            // delay: 4000,
+            // disableOnInteraction: false,
+            // },
+            speed: 4000,
+            loop:false,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next.main-swiper-arrow",
+                prevEl: ".swiper-button-prev.main-swiper-arrow",
+            },
         });
     </script>
 </body>

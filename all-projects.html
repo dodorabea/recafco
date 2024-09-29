@@ -129,15 +129,30 @@
     <div class="logo-mobile">
         <img src="assets/images/logo/color-recafco-logo.svg" alt="image"/>
     </div>
-    <!--Hero-->
-    <section class="hero-section position-relative without-overlay position-relative d-flex flex-column align-items-center justify-content-center"
-        style="background: url(assets/images/slider/slider-three.PNG);">
-        <div class="container-fluid">
-            <div class="absolute-box">
-                <a href="#" class="button button--link hover-add-underline">
-                    <span>Scientific center</span>
-                    <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
-                </a>
+   <!--main-slider-->
+   <section class="home-main-slider position-relative">
+        <!-- Swiper -->
+        <div class="swiper mySwiper main-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position-relative">
+                    <div class="image-slider">
+                        <img class="d-block w-100 img-fluid" src="assets/images/slider/slider-three.PNG" alt="image" />
+                    </div>
+                    <div class="content-slider">
+                        <div class="container-fluid">
+                            <a href="#" class="button button--link hover-add-underline">
+                                <span>Scientific center</span>
+                                <img src="assets/images/icon/danger-arrow.svg" alt="icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next main-swiper-arrow">
+                <img src="assets/images/icon/arrow-right.svg" alt="images" />
+            </div>
+            <div class="swiper-button-prev main-swiper-arrow">
+                <img src="assets/images/icon/arrow-left.svg" alt="images" />
             </div>
         </div>
     </section>
@@ -167,7 +182,7 @@
 
             <div class="tab-content" >
                 <div class="row" id="parent">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box  commercial">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box  commercial">
                         <div class="filter-result-box">
                             <div class="image">
                                 <img class="w-100 img-fluid" src="assets/images/projects/proj1.png" alt="image"/>
@@ -180,7 +195,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box commercial">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box commercial">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -195,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box governmental">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box governmental">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -210,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box commercial">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box commercial">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -225,7 +240,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box  township">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box  township">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -240,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box  educational">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box  educational">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -255,7 +270,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box  governmental">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box  governmental">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -270,7 +285,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box  governmental">
+                    <div class="col-lg-4 col-md-6 col-sm-12 box  governmental">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -285,7 +300,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mb-3 box  governmental">
+                    <div class="col-lg-4 col-md-6 col-sm-12  box  governmental">
                         <div class="filter-result-box">
                             <div class="filter-result-box">
                                 <div class="image">
@@ -372,6 +387,25 @@
                 $btns.removeClass('active');
                 $(this).addClass('active');
             })
+        });
+    </script>
+    <!--main-swiper-->
+    <script>
+        var swiperMain = new Swiper(".mySwiper.main-swiper", {
+            // autoplay: {
+            // delay: 4000,
+            // disableOnInteraction: false,
+            // },
+            speed: 4000,
+            loop:false,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next.main-swiper-arrow",
+                prevEl: ".swiper-button-prev.main-swiper-arrow",
+            },
         });
     </script>
 </body>
