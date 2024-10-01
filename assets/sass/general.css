@@ -1301,6 +1301,34 @@ html[dir=ltr] #preloader-background {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
   }
+}
+@media only screen and (min-width: 991px) and (min-width: 991px) {
+  header:hover {
+    background: #F7F7F7;
+  }
+  header:hover .accordion-button {
+    border-left: 0.105rem solid #393939;
+  }
+  header:hover .nav-link {
+    color: #393939;
+  }
+  header:hover .nav-link:hover {
+    color: #EA262A;
+  }
+  header:hover a {
+    color: #666 !important;
+  }
+  header:hover .navbar-other-option a:hover {
+    color: #EA262A !important;
+  }
+  header:hover img {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(5%) saturate(25%) hue-rotate(314deg) brightness(108%) contrast(84%);
+  }
+}
+@media only screen and (min-width: 991px) {
+  header:hover .navbar-brand img {
+    filter: unset !important;
+  }
   header .accordion-button {
     border-left: 0.105rem solid #fff;
   }
@@ -3982,6 +4010,24 @@ html[dir=ltr] body .navbar-other-option a:first-child {
   font-family: "GE-SS-Two-Bold";
 }
 
+html[dir=rtl] {
+  /*===home-main-slider===*/
+  /*===second-section===*/
+  /*===details-section===*/
+  /*===bulding-section===*/
+  /*===logo-with-description===*/
+  /*===interactive-section===*/
+  /*===Footer===*/
+  /*==page-layout-with-bg==*/
+  /*=================About=================*/
+  /*====================*/
+  /*====================*/
+  /*====================*/
+  /*====================*/
+  /*==========projects-section==========*/
+  /*=======*/
+  /*======hero-section===========*/
+}
 html[dir=rtl] body {
   font-family: "GE-SS-Two-Light";
   font-weight: 400;
@@ -3990,12 +4036,281 @@ html[dir=rtl] body .nav-link,
 html[dir=rtl] body .navbar-other-option {
   font-family: "GE-SS-Two-Bold" !important;
 }
-html[dir=rtl] body ::-moz-placeholder {
-  font-family: "GE-SS-Two-Bold" !important;
-}
-html[dir=rtl] body ::placeholder {
-  font-family: "GE-SS-Two-Bold" !important;
-}
 html[dir=rtl] body .content-slider .button {
   font-family: "GE-SS-Two-Bold" !important;
+}
+@media only screen and (min-width: 991px) {
+  html[dir=rtl] header .navbar .navbar-nav .nav-link {
+    font-family: "GE-SS-Two-Bold";
+  }
+  html[dir=rtl] header .navbar .navbar-other-option {
+    font-family: "GE-SS-Two-Bold";
+  }
+}
+@media (max-width: 991px) {
+  html[dir=rtl] .language-btn {
+    font-family: "GE-SS-Two-Bold";
+  }
+  html[dir=rtl] header .input-group .form-control::-moz-placeholder {
+    font-family: "GE-SS-Two-Medium";
+  }
+  html[dir=rtl] header .input-group .form-control::placeholder {
+    font-family: "GE-SS-Two-Medium";
+  }
+  html[dir=rtl] .navbar-nav .nav-link {
+    font-family: "GE-SS-Two-Bold";
+  }
+}
+html[dir=rtl] .accordion-collapse .form-control::-moz-placeholder {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .accordion-collapse .form-control::placeholder {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .home-main-slider .content-slider .button {
+  font-family: "GE-SS-Two-Medium";
+}
+html[dir=rtl] .home-main-slider .content-slider .button span span {
+  font-family: "GE-SS-Two-Light";
+  font-weight: 400;
+}
+html[dir=rtl] .second-section .counter .counting {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .second-section .counter p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .second-section h5 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .details-section .first-details-description p span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .details-section .second-details-description p span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .bulding-section .item p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .logo-with-description.mobile-only h2 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .logo-with-description .item p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .interactive-section .interactive-section-counter .item .counting-div {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .interactive-section .interactive-section-counter .item p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] footer.dark-footer p {
+  font-family: "GE-SS-Two-Medium";
+}
+html[dir=rtl] footer .footer__top .button--link {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] footer .footer__center .nav--footer ul li a {
+  font-family: "GE-SS-Two-Bold";
+}
+@media (min-width: 769px) {
+  html[dir=rtl] footer .footer__center .nav--footer ul li a {
+    font-family: "GE-SS-Two-Bold";
+  }
+}
+html[dir=rtl] footer .footer__bottom a.text {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] footer .footer__bottom a.copyright a {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .construction-excellence h5 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .construction-excellence .subtitle p span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .construction-excellence .button {
+  font-family: "GE-SS-Two-Bold";
+}
+@media screen and (min-width: 861px) {
+  html[dir=rtl] .section-portfolio .portfolio-items > a {
+    font-family: "GE-SS-Two-Bold";
+  }
+}
+@media screen and (max-width: 860px) {
+  html[dir=rtl] .section-portfolio .type {
+    font-family: "GE-SS-Two-Bold";
+  }
+}
+html[dir=rtl] .overview h4 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .overview p span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .overview .overview-item .footer-part p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .overview-items .overview-items-details h4 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .overview-items .overview-items-details p span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .overview-items .overview-items-details .button--primary {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .body-description-part h3 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .body-description-part p {
+  font-family: "GE-SS-Two-Medium";
+}
+html[dir=rtl] .body-description-part p span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .body-description-part .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .company-snapshot h4 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .company-snapshot .company-snapshot-items .item h3 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .build-together .build-together-absolute-box span {
+  color: #767577;
+  text-transform: uppercase;
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .build-together .build-together-absolute-box h4 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .build-together .build-together-absolute-box .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .build-together .build-together-image-part .text-image h4 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .build-together .build-together-image-part .text-image h4 span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .build-together .build-together-image-part .text-image .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .mobile-upper-text h4 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .mobile-upper-text h4 span {
+  font-family: "GE-SS-Two-Light";
+  font-weight: 400;
+}
+html[dir=rtl] .mobile-upper-text .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .projects-section .projects-div .content span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .projects-section .projects-div .content h3 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .projects-section .project-category .project-category-item h3 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .projects-section .project-category .project-category-item p,
+html[dir=rtl] .projects-section .project-category .project-category-item a {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .related-project {
+  padding: 3rem 0;
+}
+html[dir=rtl] .related-project .title {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .related-project .slider-item .slider-footer h3 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .related-project .slider-item .slider-footer p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .related-project .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .filters-taps-section .btn-filter-taps {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .filters-taps-section .filter-result-box .content-overlay p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .filters-taps-section .filter-result-box .content-overlay span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .help-section .title-part {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .help-section .help-details-item p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .help-section .form-label {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .help-section .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .help-section .form-check-label {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .hero-section.without-overlay .absolute-box .button {
+  font-family: "GE-SS-Two-Medium";
+}
+html[dir=rtl] .hero-section.without-overlay .absolute-box .button span span {
+  font-family: "GE-SS-Two-Light";
+  font-weight: 400;
+}
+html[dir=rtl] .hero-section .text-box span {
+  font-family: "GE-SS-Two-Medium";
+  letter-spacing: 0;
+}
+html[dir=rtl] .hero-section .text-box h3 {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .hero-section .text-box .tags .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .mobile-only-section {
+  display: none;
+}
+html[dir=rtl] .mobile-only-section.button-group {
+  margin-top: 1rem;
+}
+html[dir=rtl] .mobile-only-section.button-group .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .about-home-section p span {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .about-home-section .button {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .project-value-swiper-slider .swiper-pagination-fraction {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .project-value-swiper-slider .title-swiper .counting-div {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .project-value-swiper-slider .title-swiper p {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .not-found p {
+  font-family: "GE-SS-Two-Medium";
+}
+html[dir=rtl] .not-found .error-code {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .not-found .error-message {
+  font-family: "GE-SS-Two-Bold";
+}
+html[dir=rtl] .sucess-partner h2 {
+  font-family: "GE-SS-Two-Bold";
 }/*# sourceMappingURL=general.css.map */
