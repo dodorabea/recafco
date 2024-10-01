@@ -1,1 +1,3 @@
-# recafco
+# Recafco
+
+![Logo](https://s3-alpha-sig.figma.com/img/d1b0/9125/a5f32f30d8aef6662e14972f4c410d79?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RJXMVLCB2xfAvT6Nbmu~GjLaJvsynXrw2LPrhaOMZ3zkEQ2-qoZmhTpiZKOEkSENJG1bGKrDRyLxkPOi~6dH-OFGl04IXUe-BdL9KRA~pW-zVr8tL7DAJumbPndVCLPn6v5O6Y~XH9dwI~-ZEvJAjHvruLzmqa-~8pqXeTuaG7pZFxqoYLwmUTUWvpHaqf1c6vm9b4MyOvXk6V3f-RAsWQ1hEZDS5TYFOxZhYigBnRF0UbEVp0e920ItEq1B-feEsVuZ5hbuZDITz5rCGc3Y5aMMrNk7nqXgrNrZ1LIzzlhyIbENIkfY09CqZwmN76bhfOhVE~S9GPptygZxPJKxsg__)

@@ -4,14 +4,15 @@
    fontFamily
 -------------------------*/
 $font-family-base: 'avenir-Regular',
-sans-serif;
+    sans-serif;
 $font-family-medium: 'avenir-medium',
-sans-serif;
+    sans-serif;
 $font-family-semibold: 'avenir-semibold', sans-serif;
 $font-family-bold: 'avenir-bold',
-sans-serif;
+    sans-serif;
+
 // Arabic font
- html[dir=rtl] {
+html[dir=rtl] {
     @include font-face("GE-SS-Two-Light", "../fonts/GE-SS-Two-Light", normal, normal, woff2 woff ttf eot);
     @include font-face("GE-SS-Two-Medium", "../fonts/GE-SS-Two-Medium", normal, normal, woff2 woff ttf eot);
     @include font-face("GE-SS-Two-Bold", "../fonts/GE-SS-Two-Bold", normal, normal, woff2 woff ttf eot);
@@ -68,8 +69,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 a {
     text-decoration: none !important;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
     cursor: pointer !important;
 }
 
@@ -364,10 +363,7 @@ h6 {
                     color: #F9F9F9;
                     text-transform: uppercase;
                     font-family: $font-family-bold;
-
-                    &.active {
-                        color: #EA262A !important;
-                    }
+                    
 
                     @media (min-width: 992px) {
                         padding-right: 0.75rem;
@@ -380,67 +376,48 @@ h6 {
                 font-size: 0.857rem;
                 text-transform: uppercase;
                 font-family: $font-family-bold;
-
                 img {
                     width: 18px;
                 }
-
                 a {
                     color: #F9F9F9;
-
-                    &:hover {
-                        color: #EA262A !important;
-
-                        img,
-                        img.search {
-                            filter: brightness(0) saturate(100%) invert(20%) sepia(78%) saturate(2440%) hue-rotate(330deg) brightness(111%) contrast(101%) !important;
+                    &:hover{
+                        color: #EA262A;
+                        img{
+                            filter: brightness(0) saturate(100%) invert(16%) sepia(60%) saturate(7481%) hue-rotate(351deg) brightness(102%) contrast(86%);
                         }
                     }
                 }
-
-            }
-
-            &:hover {
-                @media (min-width: 991px) {
-                    .accordion-button {
-                        border-left: 0.105rem solid #393939;
-                    }
-
-                    background: #F7F7F7;
-
-                    .nav-link {
-                        color: #393939;
-
-                        &:hover {
-                            color: #EA262A;
-                        }
-
-                    }
-
-                    a {
-                        color: #393939;
-                    }
-
-                    img {
-                        filter: brightness(0) saturate(100%) invert(16%) sepia(5%) saturate(25%) hue-rotate(314deg) brightness(108%) contrast(84%);
-                    }
-                }
+               
             }
         }
-
         .sticky {
             background: rgba(249, 249, 249);
-
+            .navbar-brand {
+                img{
+                    filter: unset !important;
+                }
+            }
+            .navbar-other-option {
+                a {
+                    &:hover{
+                        color: #EA262A !important;
+                    }
+                }
+               
+            }
+            .normal-header{
+                display: none;
+            }
             .accordion-button {
                 border-left: 0.105rem solid #393939;
             }
-
             a {
-                color: #393939 !important;
+                color: #666 !important;
             }
 
             img {
-                filter: brightness(0) saturate(100%) invert(16%) sepia(5%) saturate(25%) hue-rotate(314deg) brightness(108%) contrast(84%) !important;
+                filter: brightness(0) saturate(100%) invert(43%) sepia(5%) saturate(77%) hue-rotate(9deg) brightness(90%) contrast(88%);
             }
 
             position: fixed !important;
@@ -482,7 +459,6 @@ h6 {
 
                     .nav-link {
                         color: #393939;
-
                         &:hover {
                             color: #EA262A;
                         }
@@ -1049,7 +1025,7 @@ img.search {
             img {
                 height: 350px;
                 object-fit: cover;
-                border-radius: 0.625rem;
+                border-radius: 0 0 0.625rem 0.625rem;
             }
         }
     }
@@ -1347,8 +1323,8 @@ img.search {
             height: 100px;
 
             img {
-                height: 4.5rem;
-                width: auto;
+                width: 100%;
+                height: 90px;
             }
         }
 
@@ -1477,7 +1453,8 @@ footer {
                             color: map_get($theme-colors, black-group8);
                         }
 
-                        &.active {
+                        &.active,
+                        &:hover {
                             color: map_get($theme-colors, danger);
                         }
                     }
@@ -2212,6 +2189,7 @@ footer {
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(14, 13, 11, 0));
             mix-blend-mode: multiply;
             transform: matrix(1, 0, 0, -1, 0, 0);
+            border-radius: 0.625rem;
         }
 
         .text-image {
@@ -2471,12 +2449,12 @@ footer {
         text-transform: uppercase;
         font-family: $font-family-bold;
         min-width: 100%;
-        min-height: 2.5rem;
+        min-height: 2.75rem;
         padding: 0 1rem;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        border-radius: 0.625rem;
+        border-radius: 0.425rem;
 
         @media (min-width: 769px) {
             min-width: 8.5rem;
@@ -2510,8 +2488,8 @@ footer {
         padding-top: 4rem;
 
         .row>* {
-            padding-right: calc(var(--bs-gutter-x)* .1);
-            padding-left: calc(var(--bs-gutter-x)* .1);
+            padding-right: 0.315rem;
+            padding-left: 0.315rem;
         }
 
         .box {
@@ -2520,11 +2498,11 @@ footer {
     }
 
     .filter-result-box {
-        overflow: hidden;
         position: relative;
         overflow: hidden;
         -webkit-transition: all 1s ease-out;
         transition: all 1s ease-out;
+        border-radius: 0.625rem;
 
         .image {
             height: 450px;
@@ -2800,7 +2778,7 @@ footer {
         }
 
         p {
-            font-size: 2.875rem;
+            font-size: 2.5rem;
 
             @media only screen and (max-width: 1400px) {
                 font-size: 1.35rem;
@@ -2813,7 +2791,7 @@ footer {
         }
 
         h3 {
-            font-size: 2.875rem;
+            font-size: 2.5rem;
             font-family: $font-family-bold;
 
             @media only screen and (max-width: 1400px) {
@@ -2828,12 +2806,8 @@ footer {
 
         .tags {
             .button {
-                font-size: 1.875rem;
-
-                @media only screen and (max-width: 1400px) {
-                    font-size: 1.25rem;
-                }
-
+                font-size: 1.525rem;
+                line-height: 2.5rem;
                 color: #CFCFCF;
                 font-family: $font-family-semibold;
                 text-transform: capitalize;
@@ -3107,7 +3081,7 @@ footer {
             color: #EA262A;
             padding-bottom: 16px;
             font-family: $font-family-bold;
-            padding: 0 4rem;
+            padding: 0.75rem 4rem;
             width: 100%;
 
             @media (max-width: 769px) {
@@ -3127,7 +3101,7 @@ footer {
 
         p {
             font-size: 1.5rem;
-            margin-top: 1rem;
+            margin-top: 1.75rem;
             color: #4F4E51;
             font-family: $font-family-bold;
         }
@@ -3350,24 +3324,28 @@ html[dir="rtl"] {
 }
 
 /*================Arabic font=================================*/
-html[dir=ltr]{
-    body{
-        .navbar-other-option{
-            a{
-                &:first-child{
+html[dir=ltr] {
+    body {
+        .navbar-other-option {
+            a {
+                &:first-child {
                     font-family: 'GE-SS-Two-Bold';
                 }
             }
         }
     }
 }
-html[dir=rtl]{
-    body{
+
+html[dir=rtl] {
+    body {
         font-family: 'GE-SS-Two-Light';
         font-weight: 400;
-        .nav-link , .navbar-other-option{
+
+        .nav-link,
+        .navbar-other-option {
             font-family: 'GE-SS-Two-Bold' !important;
         }
+
         ::-ms-input-placeholder {
             font-family: 'GE-SS-Two-Bold' !important;
         }
@@ -3375,8 +3353,9 @@ html[dir=rtl]{
         ::placeholder {
             font-family: 'GE-SS-Two-Bold' !important;
         }
-        .content-slider{
-            .button{
+
+        .content-slider {
+            .button {
                 font-family: 'GE-SS-Two-Bold' !important;
             }
         }
